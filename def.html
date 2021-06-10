@@ -1,0 +1,34 @@
+<!--In  this project, we'll use objects, arrays, and functions to add items to a cart to build the online store shown below-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="def.css">
+    </head>
+    <body>
+        <!--At the top of the page, give this webpage an h1 heading displaying Store Name-->
+        <h1>D.E.F Designs</h1>
+        <!--Below the Store Name heading, create an image displaying "insert img link here" with id set to basketImage-->
+        <img id="basketImage" src="https://img.icons8.com/cute-clipart/64/000000/shopping-basket-success.png">
+        <!--Show the number of items in the cart. Add an h2 heading displaying the number 0 with the ID itemCounter-->
+        <h2 id="itemCounter">0</h2>
+        <!--For the total cost of the items in the cart, create a p element with ID orderTotal. We'll display the total using JS later.-->
+        <p id="orderTotal"></p>
+ <!--We'll need div elements to hold the different products the store has to offer. Create a div element with the class set to "product"--> 
+ <div class="product">
+     <!--Inside the div element, display the products image-->
+    <img src="/img/Judahs_6th_Bday.jpg" alt="Judahs_6th_Bday">
+    <!--Inside the same div, create an h3 heading displaying description of image above. Then create a button displaying Add to Cart-->
+    <h3>Judahs 6th Bday</h3>
+    <!--Make the Add to Cart buttons interactive by setting the onclick attribute to addToCart(birthday) or addToCart(lion), depending on the product-->
+    <button onclick="addToCart(birthday)">Add to Cart</button>
+ </div>
+ <!--Add another product item for the store. Underneath the first div, add a second div with the same class-->
+ <div class="product">
+     <img src="/img/lion-fire-art.jpg" alt="lion-fire-art">
+     <h3>Lion Fire Art</h3>
+     <!--Make the Add to Cart buttons interactive by setting the onclick attribute to addToCart(birthday) or addToCart(lion), depending on the product-->
+     <button onclick="addToCart(lion)">Add to Cart</button>
+ </div>
+<script src="def.js"></script>
+     </body>
+</html>

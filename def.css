@@ -1,0 +1,33 @@
+/*Although it contains no text, let's move the element with ID orderTotal to the right with margin-right: 16px; and text-align: right*/
+#orderTotal {
+    margin-right: 16px;
+    text-align: right;
+}
+/*The next element to move to the right has ID itemCounter. Set its position to absolute, its right property to 56px, and its top property to 0px*/
+#itemCounter {
+    position: absolute;
+    right: 56px;
+    top: 0px;
+}
+/*Let's move the cart image too. Use the ID basketImage to set position to absolute, the right property to 16px, and the top property to 16px.*/
+#basketImage {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+}
+/*Let's place those products next to each other. Using the product class, set display to inline-block, margin to 5px.*/
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+body {
+    color: midnightblue;
+    font-family: Helvetica Neue;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
